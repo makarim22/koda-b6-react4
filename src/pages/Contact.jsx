@@ -54,7 +54,7 @@ function Contact() {
  return (
     <div className="flex flex-col h-screen">
       <div className="flex flex-row flex-grow"> 
-        <div className="flex flex-col items-center bg-blue-500 w-1/2 justify-center p-8 text-center"> 
+        <div className="flex flex-col items-center w-1/2 justify-center p-8 text-center"> 
           <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
           <h2 className="text-lg">
             We Are Committed to processing the information in order to contact
@@ -63,7 +63,7 @@ function Contact() {
         </div>
 
         <form
-          className="flex flex-col bg-yellow-500 w-1/2 p-8" 
+          className="flex flex-col w-1/2 p-8" 
           onSubmit={handleSubmit}
         >
           <div className="mb-4">
@@ -111,7 +111,7 @@ function Contact() {
         </form>
       </div>
 
-      <div className="flex flex-row bg-red-300 h-[250px] justify-center p-4 "> 
+      <div className="flex flex-row h-[250px] justify-center p-4 "> 
         {contacts.length > 0 && (
           <div className="w-full max-w-2xl"> 
             <h3 className="text-xl font-semibold mb-4">Pesan Pelanggan({contacts.length})</h3>
